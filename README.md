@@ -12,5 +12,5 @@ Further info [here](https://dev.to/dengel29/loading-local-files-in-firefox-and-c
 This is probably ~~horribly un~~safe to do
 
 Things to do:
-[ ] Allow for blue to red and red to blue transitions
-[ ] Load the images before hitting the button, so they don't pop in when loading the page for the first time
+- [ ] Allow for blue to red and red to blue transitions
+- [ ] Load the images before hitting the button, so they don't pop in when loading the page for the first time
