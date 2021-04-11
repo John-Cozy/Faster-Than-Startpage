@@ -1,0 +1,170 @@
+
+@keyframes fade_in  { from { opacity: 0; } to { opacity: 1; } }
+@keyframes fade_out { from { opacity: 1; } to { opacity: 0; } }
+
+@keyframes middle_to_right { from { background-color: rgba(143, 2, 193, 0.37); } to { background-color: rgba(0,  64, 255, 0.24); } }
+@keyframes right_to_middle { from { background-color: rgba(0,  64, 255, 0.24); } to { background-color: rgba(143, 2, 193, 0.37); } }
+@keyframes middle_to_left  { from { background-color: rgba(143, 2, 193, 0.37); } to { background-color: rgba(255, 0,   0, 0.33); } }
+@keyframes left_to_middle  { from { background-color: rgba(255, 0,   0, 0.33); } to { background-color: rgba(143, 2, 193, 0.37); } }
+
+.fade_out { animation: fade_out .2s; opacity: 0; }
+.fade_in  { animation: fade_in  .2s; opacity: 1; }
+
+.middle_to_right { animation: middle_to_right .5s; }
+.right_to_middle { animation: right_to_middle .5s; }
+.middle_to_left  { animation: middle_to_left  .5s; }
+.left_to_middle  { animation: left_to_middle  .5s; }
+
+.red    { background: rgba(255, 0,   0, 0.33) no-repeat center center/cover fixed; }
+.purple { background: rgba(143, 2, 193, 0.37) no-repeat center center/cover fixed; }
+.blue   { background: rgba(0,  64, 255, 0.24) no-repeat center center/cover fixed; }
+
+*:focus {
+  outline: none;
+}
+
+html, body {
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin: 0;
+  color: #fff;
+  font-family: "Lunchtime Doubly So";
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  transition: color .2s;
+  font-size: 19pt;
+  text-shadow: 2px 2px #232323;
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+.red a:hover {
+  color: #c45a5a;
+}
+
+.purple a:hover {
+  color: #a65ac4;
+}
+
+.blue a:hover {
+  color: #615ac4;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+#cont1 {
+  background: url(images/background/Lit.png) no-repeat center center/cover fixed;
+}
+
+#cont3 {
+  background: url(images/background/NotLit.png) no-repeat center center/cover fixed;
+}
+
+#buttons {
+  width: 250px; height: 200px;
+  margin: auto;
+  top: 41%;
+  left: 43.5%;
+  position: absolute;
+  transition: .2s;
+  opacity: .1;
+}
+
+#buttons:hover {
+  opacity: 1;
+}
+
+.button {
+  width: 40px; height: 40px;
+  background: url(images/ui/arrow.png) no-repeat center center/100%;
+  position: absolute;
+  transition: .1s;
+  opacity: .5;
+}
+
+.button:hover  { filter: brightness(150%); opacity: 1; }
+.button:active { filter: brightness(120%); opacity: 1; }
+
+#but0 { 
+  width: 20px; height: 20px;
+  left: 46%; top: 45%; 
+  background: url(images/ui/button.png) no-repeat; 
+  background-size: 100%;
+}
+
+#but1 { left: 20%;   top: 25%; transform: rotate(-50deg); }
+#but2 { left: 42.5%; top: 10%; transform: rotate(0deg); }
+#but3 { right: 20%;  top: 25%; transform: rotate(50deg); }
+#but4 { left: 20%;   top: 55%; transform: rotate(-120deg); }
+#but5 { left: 42.5%; top: 70%; transform: rotate(180deg); }
+#but6 { right: 20%;  top: 55%; transform: rotate(120deg); }
+#but7 { left: 35%;   bottom: 5%; opacity: .1; }
+#but8 { right: 0%;   top: 42%; transform: rotate(90deg); }
+#but9 { left: 0%;    top: 42%; transform: rotate(-90deg); }
+
+.box {
+  width: 350px;
+  height: 200px;
+  border-width: 3px;
+  border-color: #181818;
+  border-style: solid;
+  float: left;
+  position: absolute;
+  display: none;
+  background: center center/cover no-repeat;
+}
+
+.box ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  padding: 0;
+  margin: auto;
+  height: 100%;
+}
+
+#box1, #box6 {
+  width: 200px; height: 350px; 
+}
+
+#box1 { left:  27.8%; top: 15%; }
+#box2 { left:  41%;   top: 10%; }
+#box3 { right: 20%;   top: 25%; }
+#box4 { left:  20%;   top: 55%; }
+#box5 { left:  41%;   top: 70%; }
+#box6 { right: 27.8%; top: 50%; }
+
+#box7 {
+  left:34px;
+  bottom:34px;
+  width:700px;
+  height:150px;
+  background-color: #121212;
+}
+
+#box7 img {
+  height: 100%;
+  float: left;
+  border-right: 3px solid #181818;
+}
+
+#box7 p {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: larger;
+  text-shadow: 2px 2px #080808;
+}

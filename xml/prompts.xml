@@ -1,0 +1,19 @@
+<prompts>
+    <promptset>
+        <prompt>
+            Electrochemistry prompt example
+        </prompt>
+    </promptset>
+
+    <promptset>
+        <prompt>
+            Volition prompt example
+        </prompt>
+    </promptset>
+    
+    <promptset>
+        <prompt>
+            Logic prompt example
+        </prompt>
+    </promptset>
+</prompts>

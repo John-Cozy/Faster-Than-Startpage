@@ -1,0 +1,50 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <title>New Tab</title>
+
+    <meta charset="utf-8">
+    <meta name="description" content="Faster Than Start startpage">
+    <meta name="author" content="John-Cozy">
+
+    <link rel="stylesheet" href="styles.css?v=1.0">
+  </head>
+
+  <body>
+    <div class="container" id="cont1">
+      <div class="container purple" id="cont2">
+        <div class="container" id="cont3">
+            <div id="buttons">
+                <div class="button" id="but0" onclick="toggleAll();"></div>
+                <!--<div class="button" id="but1" onclick="toggleBox(1);"></div>
+                <div class="button" id="but2" onclick="toggleBox(2);"></div>
+                <div class="button" id="but3" onclick="toggleBox(3);"></div>
+                <div class="button" id="but4" onclick="toggleBox(4);"></div>
+                <div class="button" id="but5" onclick="toggleBox(5);"></div>
+                <div class="button" id="but6" onclick="toggleBox(6);"></div>!-->
+                <div class="button" id="but8" onclick="nextPage();"></div>
+                <div class="button" id="but9" onclick="prevPage();"></div>
+            </div>
+
+            <div class="box" id="box1"></div>
+            <div class="box" id="box2"></div>
+            <div class="box" id="box3"></div>
+            <div class="box" id="box4"></div>
+            <div class="box" id="box5"></div>
+            <div class="box" id="box6"></div>
+
+            <div class="box" id="box7">
+                <img src="images/skills/violition.png"/>
+                <p id="prompt">Where do you want to be in 10 years?</p>
+            </div>
+
+            <div class="button" id="but7" onclick="togglePromptBox();"></div>
+        </div>
+      </div>
+    </div>
+    <script src="js/pageController.js"></script>
+    <script src="js/linkParser.js"></script>
+    <script src="js/promptParser.js"></script>
+  </body>
+</html>
