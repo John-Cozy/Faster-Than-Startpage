@@ -10,3 +10,7 @@ In order for the file to parse XML properly without hosting the web page on a se
 Further info [here](https://dev.to/dengel29/loading-local-files-in-firefox-and-chrome-m9f)
 
 This is probably ~~horribly un~~safe to do
+
+Things to do:
+[ ] Allow for blue to red and red to blue transitions
+[ ] Load the images before hitting the button, so they don't pop in when loading the page for the first time
